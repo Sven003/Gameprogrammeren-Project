@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samue\\source\\repos\\Pong Project\\Pong Project\\Pong Project.csproj": {}
+    "C:\\Users\\samue\\OneDrive\\Documents\\GitHub\\Gameprogrammeren-Project\\Pong Project\\Pong Project\\Pong Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samue\\source\\repos\\Pong Project\\Pong Project\\Pong Project.csproj": {
+    "C:\\Users\\samue\\OneDrive\\Documents\\GitHub\\Gameprogrammeren-Project\\Pong Project\\Pong Project\\Pong Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samue\\source\\repos\\Pong Project\\Pong Project\\Pong Project.csproj",
+        "projectUniqueName": "C:\\Users\\samue\\OneDrive\\Documents\\GitHub\\Gameprogrammeren-Project\\Pong Project\\Pong Project\\Pong Project.csproj",
         "projectName": "Pong Project",
-        "projectPath": "C:\\Users\\samue\\source\\repos\\Pong Project\\Pong Project\\Pong Project.csproj",
+        "projectPath": "C:\\Users\\samue\\OneDrive\\Documents\\GitHub\\Gameprogrammeren-Project\\Pong Project\\Pong Project\\Pong Project.csproj",
         "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samue\\source\\repos\\Pong Project\\Pong Project\\obj\\",
+        "outputPath": "C:\\Users\\samue\\OneDrive\\Documents\\GitHub\\Gameprogrammeren-Project\\Pong Project\\Pong Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samue\\AppData\\Roaming\\NuGet\\NuGet.Config",
