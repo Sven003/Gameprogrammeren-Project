@@ -14,7 +14,6 @@ namespace Pong_Project
 		Paddle paddle1, paddle2;
 		Vector2 positionPaddle1, positionPaddle2;
 		KeyboardState currentKeyboardState;
-		Boolean resetgame;
 		int speedPaddle;
 
 		public Game1()
@@ -44,7 +43,7 @@ namespace Pong_Project
 
             // TODO: use this.Content to load your game content here
         }
-
+		
 		protected override void Update(GameTime gameTime)
 		{
 			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
