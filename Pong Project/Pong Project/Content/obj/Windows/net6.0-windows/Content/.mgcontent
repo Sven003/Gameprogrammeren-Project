@@ -4,7 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/paddleBlue.png</File>
+    <File>C:/Users/samue/OneDrive/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/paddleBlue.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

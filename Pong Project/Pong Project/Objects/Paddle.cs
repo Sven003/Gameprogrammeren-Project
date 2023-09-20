@@ -19,13 +19,21 @@ namespace Pong_Project.Objects
         SpriteBatch spriteBatch;
 
         Vector2 paddlePosition;
+        Vector2 startingPositionPaddle1, startingPositionPaddle2;
 		Texture2D paddle;
 
-        public Paddle(ContentManager Content)
+		public Paddle(ContentManager Content)
         {
             paddle = Content.Load<Texture2D>("paddleBlue");
         }
 
+        public void reset(int player)
+        {
+            if (player == 1)
+            {
+                //reset positie naar startingpos
+            }
+        }
         public void Update(GameTime gameTime)
         {
 
