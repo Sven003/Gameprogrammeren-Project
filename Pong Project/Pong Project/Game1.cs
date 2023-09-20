@@ -77,8 +77,8 @@ namespace Pong_Project
 		protected override void Draw(GameTime gameTime)
 		{
 			GraphicsDevice.Clear(Color.CornflowerBlue);
-			paddle1.draw(_spriteBatch, positionPaddle1);
-            paddle2.draw(_spriteBatch, positionPaddle2);
+			paddle1.draw(_spriteBatch, positionPaddle1, Color.White);
+            paddle2.draw(_spriteBatch, positionPaddle2, Color.Red) ;
 
             base.Draw(gameTime);
 		}
