@@ -1,1 +1,3 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Sprite test/Content/paddleBlue.png","C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Sprite test/Content/bin/DesktopGL/Content/paddleBlue.xnb","TextureProcessor","Texture2DContent",225,3649,0.1959479
+"C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Sprite test/Content/paddleRed.png","C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Sprite test/Content/bin/DesktopGL/Content/paddleRed.xnb","TextureProcessor","Texture2DContent",228,3649,0.0032066

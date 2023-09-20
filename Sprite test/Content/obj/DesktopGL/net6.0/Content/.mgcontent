@@ -4,8 +4,8 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/svenw/OneDrive/Documents/Gameprogrammeren-Project/Sprite test/Content/paddleBlue.png</File>
-    <File>C:/Users/svenw/OneDrive/Documents/Gameprogrammeren-Project/Sprite test/Content/paddleRed.png</File>
+    <File>C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Sprite test/Content/paddleBlue.png</File>
+    <File>C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Sprite test/Content/paddleRed.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
