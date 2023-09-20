@@ -11,8 +11,11 @@ namespace Pong_Project
 	{
 		private GraphicsDeviceManager _graphics;
 		private SpriteBatch _spriteBatch;
-		Paddle paddle1, paddle2;
-		Vector2 positionPaddle1, positionPaddle2;
+
+		Lives lives;
+
+        Paddle paddle1, paddle2;
+        Vector2 positionPaddle1, positionPaddle2;
 		KeyboardState currentKeyboardState;
 		int speedPaddle;
 
@@ -40,6 +43,7 @@ namespace Pong_Project
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 			paddle1 = new Paddle(Content);
             paddle2 = new Paddle(Content);
+			lives = new Lives(Content);
 
             // TODO: use this.Content to load your game content here
         }
@@ -49,8 +53,6 @@ namespace Pong_Project
 			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
 				Exit();
 
-			//paddle1.Update(gameTime);
-            //paddle2.Update(gameTime);
 
 			currentKeyboardState = Keyboard.GetState();
 			
@@ -79,6 +81,7 @@ namespace Pong_Project
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 			paddle1.draw(_spriteBatch, positionPaddle1, Color.White);
             paddle2.draw(_spriteBatch, positionPaddle2, Color.Red) ;
+			lives.draw(_spriteBatch);
 
             base.Draw(gameTime);
 		}
