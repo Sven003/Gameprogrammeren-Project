@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/File.spritefont","C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/bin/Windows/File.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0.2789142
+"C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/MinecraftHeart.png","C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/bin/Windows/MinecraftHeart.xnb","TextureProcessor","Texture2DContent",1002,88821,0.0268356
+"C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/paddleBlue.png","C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/bin/Windows/paddleBlue.xnb","TextureProcessor","Texture2DContent",225,3649,0.0029164

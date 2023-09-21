@@ -33,6 +33,7 @@ namespace Pong_Project
 			positionPaddle2.X = 789;
 			positionPaddle2.Y = 210;
 			speedPaddle = 4;
+			
 			// TODO: Add your initialization logic here
 
 			base.Initialize();
@@ -44,10 +45,13 @@ namespace Pong_Project
 			paddle1 = new Paddle(Content);
             paddle2 = new Paddle(Content);
 			lives = new Lives(Content);
+			lives.initialize(3, 3);
+			//ik weet niet waarom dit niet bij initialize kan. 
 
-            // TODO: use this.Content to load your game content here
-        }
-		
+
+			// TODO: use this.Content to load your game content here
+		}
+
 		protected override void Update(GameTime gameTime)
 		{
 			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
@@ -56,22 +60,23 @@ namespace Pong_Project
 
 			currentKeyboardState = Keyboard.GetState();
 			
-			if (currentKeyboardState.IsKeyDown(Keys.W))
+			if (currentKeyboardState.IsKeyDown(Keys.W) && positionPaddle1.Y >= 0)
 			{
 				positionPaddle1.Y = positionPaddle1.Y - speedPaddle;
 			}
-			if (currentKeyboardState.IsKeyDown(Keys.S))
+			if (currentKeyboardState.IsKeyDown(Keys.S) && positionPaddle1.Y <= 410)
 			{
 				positionPaddle1.Y = positionPaddle1.Y + speedPaddle;
 			}
-			if (currentKeyboardState.IsKeyDown(Keys.Up))
+			if (currentKeyboardState.IsKeyDown(Keys.Up) && positionPaddle2.Y >= 0)
 			{
 				positionPaddle2.Y = positionPaddle2.Y - speedPaddle;
 			}
-			if (currentKeyboardState.IsKeyDown(Keys.Down))
+			if (currentKeyboardState.IsKeyDown(Keys.Down) && positionPaddle2.Y <= 410)
 			{
 				positionPaddle2.Y = positionPaddle2.Y + speedPaddle;
 			}
+
 
 			base.Update(gameTime);
 		}
