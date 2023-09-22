@@ -7532,19 +7532,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\samue\\.nuget\\packages\\": {}
+    "C:\\Users\\svenw\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samue\\OneDrive\\Documents\\GitHub\\Gameprogrammeren-Project\\Pong Project\\Pong Project\\Pong Project.csproj",
+      "projectUniqueName": "C:\\Users\\svenw\\OneDrive\\Documents\\Gameprogrammeren-Project\\Pong Project\\Pong Project\\Pong Project.csproj",
       "projectName": "Pong Project",
-      "projectPath": "C:\\Users\\samue\\OneDrive\\Documents\\GitHub\\Gameprogrammeren-Project\\Pong Project\\Pong Project\\Pong Project.csproj",
-      "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samue\\OneDrive\\Documents\\GitHub\\Gameprogrammeren-Project\\Pong Project\\Pong Project\\obj\\",
+      "projectPath": "C:\\Users\\svenw\\OneDrive\\Documents\\Gameprogrammeren-Project\\Pong Project\\Pong Project\\Pong Project.csproj",
+      "packagesPath": "C:\\Users\\svenw\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\svenw\\OneDrive\\Documents\\Gameprogrammeren-Project\\Pong Project\\Pong Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\samue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\svenw\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
