@@ -26,7 +26,7 @@ namespace Pong_Project.Objects
             heart = Content.Load<Texture2D>("MinecraftHeart");
         }
 
-		public void initialize(int lives1 = 3, int lives2 = 3)
+		public void initialize(int lives1 = 3, int lives2 = 3)//default levens per speler is 3
 		{
 			playerLives1 = lives1;
 			playerLives2 = lives2;
@@ -68,6 +68,5 @@ namespace Pong_Project.Objects
 			spriteBatch.Draw(heart, position, Color.White);
             spriteBatch.End();
         }
-
     }
 }

@@ -69,6 +69,7 @@ namespace Pong_Project
 			{
 				positionPaddle1.Y = positionPaddle1.Y + speedPaddle;
 			}
+			
 			if (currentKeyboardState.IsKeyDown(Keys.Up) && positionPaddle2.Y >= 0)
 			{
 				positionPaddle2.Y = positionPaddle2.Y - speedPaddle;
@@ -77,6 +78,7 @@ namespace Pong_Project
 			{
 				positionPaddle2.Y = positionPaddle2.Y + speedPaddle;
 			}
+			
 
 			base.Update(gameTime);
 		}
