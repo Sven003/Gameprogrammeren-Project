@@ -38,10 +38,10 @@ namespace Pong_Project.Objects
         {
 
         }
-        public void draw(SpriteBatch spriteBatch, Vector2 position)
+        public void draw(SpriteBatch spriteBatch, Vector2 position, Color color)
         {
             spriteBatch.Begin();
-            spriteBatch.Draw(paddle, position, Color.White);
+            spriteBatch.Draw(paddle, position, (color));
             spriteBatch.End();  
         }
     }

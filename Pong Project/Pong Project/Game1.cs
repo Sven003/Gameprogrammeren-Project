@@ -11,8 +11,11 @@ namespace Pong_Project
 	{
 		private GraphicsDeviceManager _graphics;
 		private SpriteBatch _spriteBatch;
-		Paddle paddle1, paddle2;
-		Vector2 positionPaddle1, positionPaddle2;
+
+		Lives lives;
+
+        Paddle paddle1, paddle2;
+        Vector2 positionPaddle1, positionPaddle2;
 		KeyboardState currentKeyboardState;
 		int speedPaddle;
 
@@ -30,6 +33,7 @@ namespace Pong_Project
 			positionPaddle2.X = 789;
 			positionPaddle2.Y = 210;
 			speedPaddle = 4;
+			
 			// TODO: Add your initialization logic here
 
 			base.Initialize();
@@ -40,36 +44,41 @@ namespace Pong_Project
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 			paddle1 = new Paddle(Content);
             paddle2 = new Paddle(Content);
+			lives = new Lives(Content);
+			lives.initialize();//Bepaalt de levens. Default is 3 per speler.
+			//ik weet niet waarom dit niet bij initialize kan. 
 
-            // TODO: use this.Content to load your game content here
-        }
-		
+
+			// TODO: use this.Content to load your game content here
+		}
+
 		protected override void Update(GameTime gameTime)
 		{
 			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
 				Exit();
 
-			//paddle1.Update(gameTime);
-            //paddle2.Update(gameTime);
 
-			currentKeyboardState = Keyboard.GetState();
+			currentKeyboardState = Keyboard.GetState();//Dit leest de ingedrukte toetsen
 			
-			if (currentKeyboardState.IsKeyDown(Keys.W))
+			//controls voor speler 1 en speler 2
+			if (currentKeyboardState.IsKeyDown(Keys.W) && positionPaddle1.Y >= 0)
 			{
 				positionPaddle1.Y = positionPaddle1.Y - speedPaddle;
 			}
-			if (currentKeyboardState.IsKeyDown(Keys.S))
+			if (currentKeyboardState.IsKeyDown(Keys.S) && positionPaddle1.Y <= 410)
 			{
 				positionPaddle1.Y = positionPaddle1.Y + speedPaddle;
 			}
-			if (currentKeyboardState.IsKeyDown(Keys.Up))
+			
+			if (currentKeyboardState.IsKeyDown(Keys.Up) && positionPaddle2.Y >= 0)
 			{
 				positionPaddle2.Y = positionPaddle2.Y - speedPaddle;
 			}
-			if (currentKeyboardState.IsKeyDown(Keys.Down))
+			if (currentKeyboardState.IsKeyDown(Keys.Down) && positionPaddle2.Y <= 410)
 			{
 				positionPaddle2.Y = positionPaddle2.Y + speedPaddle;
 			}
+			
 
 			base.Update(gameTime);
 		}
@@ -77,8 +86,9 @@ namespace Pong_Project
 		protected override void Draw(GameTime gameTime)
 		{
 			GraphicsDevice.Clear(Color.CornflowerBlue);
-			paddle1.draw(_spriteBatch, positionPaddle1);
-            paddle2.draw(_spriteBatch, positionPaddle2);
+			paddle1.draw(_spriteBatch, positionPaddle1, Color.White);
+            paddle2.draw(_spriteBatch, positionPaddle2, Color.Red) ;
+			lives.draw(_spriteBatch);
 
             base.Draw(gameTime);
 		}

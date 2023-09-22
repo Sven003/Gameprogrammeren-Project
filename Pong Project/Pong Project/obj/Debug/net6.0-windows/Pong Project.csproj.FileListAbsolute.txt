@@ -74,3 +74,7 @@ C:\Users\samue\OneDrive\Documents\GitHub\Gameprogrammeren-Project\Pong Project\P
 C:\Users\samue\OneDrive\Documents\GitHub\Gameprogrammeren-Project\Pong Project\Pong Project\obj\Debug\net6.0-windows\Pong Project.pdb
 C:\Users\samue\OneDrive\Documents\GitHub\Gameprogrammeren-Project\Pong Project\Pong Project\obj\Debug\net6.0-windows\Pong Project.genruntimeconfig.cache
 C:\Users\samue\OneDrive\Documents\GitHub\Gameprogrammeren-Project\Pong Project\Pong Project\obj\Debug\net6.0-windows\ref\Pong Project.dll
+C:\Users\samue\Documents\GitHub\Gameprogrammeren-Project\Pong Project\Pong Project\bin\Debug\net6.0-windows\Content\File.xnb
+C:\Users\samue\Documents\GitHub\Gameprogrammeren-Project\Pong Project\Pong Project\bin\Debug\net6.0-windows\Content\MinecraftHeart.xnb
+C:\Users\samue\OneDrive\Documents\GitHub\Gameprogrammeren-Project\Pong Project\Pong Project\bin\Debug\net6.0-windows\Content\File.xnb
+C:\Users\samue\OneDrive\Documents\GitHub\Gameprogrammeren-Project\Pong Project\Pong Project\bin\Debug\net6.0-windows\Content\MinecraftHeart.xnb
