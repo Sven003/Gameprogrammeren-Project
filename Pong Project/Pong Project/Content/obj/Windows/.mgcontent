@@ -4,11 +4,13 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/File.spritefont</File>
-    <File>C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/MinecraftHeart.png</File>
-    <File>C:/Users/samue/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/paddleBlue.png</File>
+    <File>C:/Users/svenw/OneDrive/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/avgBallSmall.png</File>
+    <File>C:/Users/svenw/OneDrive/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/File.spritefont</File>
+    <File>C:/Users/svenw/OneDrive/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/MinecraftHeart.png</File>
+    <File>C:/Users/svenw/OneDrive/Documents/GitHub/Gameprogrammeren-Project/Pong Project/Pong Project/Content/paddleBlue.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
