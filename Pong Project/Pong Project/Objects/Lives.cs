@@ -16,8 +16,7 @@ namespace Pong_Project.Objects
 	{
 		int playerLives1, playerLives2;
         Texture2D heart;
-        SpriteBatch spriteBatch;
-        Vector2 position; //later weghalen
+        //SpriteBatch spriteBatch;
 		Vector2 position1, position2;
 		
 		
@@ -65,7 +64,6 @@ namespace Pong_Project.Objects
 				spriteBatch.Draw(heart, position2, Color.White);
 				position2.X = position2.X - 60;
 			}
-			spriteBatch.Draw(heart, position, Color.White);
             spriteBatch.End();
         }
     }
