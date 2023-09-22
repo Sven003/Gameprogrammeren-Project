@@ -26,7 +26,7 @@ namespace Pong_Project.Objects
             heart = Content.Load<Texture2D>("MinecraftHeart");
         }
 
-		public void initialize(int lives1, int lives2)
+		public void initialize(int lives1 = 3, int lives2 = 3)
 		{
 			playerLives1 = lives1;
 			playerLives2 = lives2;
@@ -54,12 +54,18 @@ namespace Pong_Project.Objects
         {
             spriteBatch.Begin();
 			position1 = new Vector2 (0, 0);
+            position2 = new Vector2(752, 0);
 			for (int i = 0; i < playerLives1; i++)
 			{
-				//spriteBatch.Draw(heart, position1, Color.White);
-				position1.X = position1.X + 30;
+				spriteBatch.Draw(heart, position1, Color.White);
+				position1.X = position1.X + 60;
 			}
-			//spriteBatch.Draw(heart, position, Color.White);
+			for (int i = 0; i < playerLives2; i++)
+			{
+				spriteBatch.Draw(heart, position2, Color.White);
+				position2.X = position2.X - 60;
+			}
+			spriteBatch.Draw(heart, position, Color.White);
             spriteBatch.End();
         }
 

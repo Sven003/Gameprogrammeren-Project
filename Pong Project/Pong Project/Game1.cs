@@ -45,7 +45,7 @@ namespace Pong_Project
 			paddle1 = new Paddle(Content);
             paddle2 = new Paddle(Content);
 			lives = new Lives(Content);
-			lives.initialize(3, 3);
+			lives.initialize();//Bepaalt de levens. Default is 3 per speler.
 			//ik weet niet waarom dit niet bij initialize kan. 
 
 
@@ -58,8 +58,9 @@ namespace Pong_Project
 				Exit();
 
 
-			currentKeyboardState = Keyboard.GetState();
+			currentKeyboardState = Keyboard.GetState();//Dit leest de ingedrukte toetsen
 			
+			//controls voor speler 1 en speler 2
 			if (currentKeyboardState.IsKeyDown(Keys.W) && positionPaddle1.Y >= 0)
 			{
 				positionPaddle1.Y = positionPaddle1.Y - speedPaddle;
@@ -76,7 +77,6 @@ namespace Pong_Project
 			{
 				positionPaddle2.Y = positionPaddle2.Y + speedPaddle;
 			}
-
 
 			base.Update(gameTime);
 		}
